@@ -1,0 +1,114 @@
+
+
+
+codepen link:
+https://codepen.io/crysjean/full/zYqdXGa
+
+
+Copy the questions below into the first-lastname.txt file on your github repo - answer each question and then push your changes. 
+
+    1. What is Semantic HTML? 
+Semantic HTML is clearly defined content that both the developer and the browser can understand. Semantic tags that clearly define itself. Screen Readers need this to navigate your website.
+    2. What is HTML used for? 
+HTML is read by the browser and used for a blueprint for the site.
+    3. What is an attribute and where do we put it? 
+Attributes define a property for an element as an attribute/value pair. Goes in the start tag of element.
+    4. What is the h1 tag used for? How many times should I use it on a page?
+H1 tags are the heading on a website. Use only once per website.
+    5. Name two tags that have required attributes
+Anchor <a> tags attribute is href. Image <img> tags attribute is src.
+    6. What do we put in the head of our HTML document? 
+Elements include: meta, link, css link, style, script, noscript, base, title, js link.
+    7. What is an id? 
+Id's are unique identifiers so you can style them in css. 
+    8. What elements can I add an id to? 
+All elements can have an id tag within the body of a page.
+    9. How many times can I use the same id on a page? 
+Only once per page.
+    10. What is a class?
+Class is used to style elements in css.
+    11. What elements can I add a class to?
+Any element can use a class tag. 
+    12. How many times can I use the same class on a page?
+You can use the same class tag as much as you want. 
+    13. How do I get my link to open in a new tab?
+target="_blank" within the element.
+    14. What is the alt attribute in the image tag used for? 
+To describe the page outloud to screenreaders for accessability.
+    15. How do I reference an id?
+#followed-by-element-name in css
+    16. What is the difference between a section and a div
+A div is not a semantic element. It is used to group block elements to style them in css. Sections are descriptive and can be used for screenreaders. They are the major sections of the page like chapters, header, footer, and inbetween.
+    17. What is CSS used for? 
+ Css is used for styling and the layout of a page.
+    18. How to we select an element? Example - every h2 on the page
+h2{ put styling in here};
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+Id: Use once per page, use for anchoring links to the page like in a nav use #about you can link that button to the about section. Class: Use many times on a page like all your text on the page can have class="main-text" so you can style them all at once.
+    20. How do we select classes in CSS?
+With the . dot.
+    21. How do we select a p element with a single class of “human””?
+.human{ styling here};
+    22. What is a parent child selector? When would this be useful? 
+Used to match only elements that are matched by the second selector that are direct children of elements matched by the first.
+    23. How do you select all links within a div with the class of sidebar?
+.sidebar a{styling here};
+    24. What is a pseudo selector?
+This is added to elements for a special state. Like :hover.
+    25. What do we use the change the spacing between lines?
+Line-height property.
+    26. What do we use to change the spacing between letters?
+Letter-spacing property.
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+Text-transform property.
+    28. How do I add a 1px border around my div that is dotted and black?
+border: 1px dotted black;
+    29. How do I select everything on the page? 
+*{styling here};
+    30. How do I write a comment in CSS?
+/* use this <-- or this-- > */
+    31. How do I find out what file I am in, when I am using the command line?
+pwd (print working directory)
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+ls (list of files in current directory)
+    33. How do I remove a file via the command line? Why do I have to be careful with this?
+rm or rm-r. It does not warn you that it will be permenatly deleted first. 
+    34. Why should I use version control? 
+It is important to keep track of changes as many people collab on it at the same time, without confusion or corrupt files that wont merge together.
+    35. How often should I commit to github?
+Commit as you make changes to avoid loss of info, or every 15 minutes.
+    36. What is the command we would use to push our repo up to github?
+ git push -u origin crystal-csete.
+    37. Walk me through Lambda's git flow.
+Fork Repo!
+add collaborator
+clone repo (git clone <paste clone url here>)
+make your own branch (git checkout -b crystal-csete)
+work on the assignment
+use git add .
+use git commit -m "added this"
+use git push -u origin crystal-csete
+create pull request
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+Inline element: Does not take up whole line of space only as much space as opening and closing tags. 
+Block element: Takes up whole width of page and has a line break before and after the element.
+    2. What happens when an element is positioned absolutely? 
+Element moves along the screen when scrolling.
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+Inline element
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    Block element by default: div, address, h1-h6
+    Inline element by default: a, span
+    Inline-block element by default: button
+5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+The box model is the design and layout of the page. It is a box that wraps around every html element on the page. The fix for the fragile layout probs is:
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+max-width: 100%;
+}
+
